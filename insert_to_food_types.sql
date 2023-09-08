@@ -1,0 +1,21 @@
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Asian Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("European Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Middle Eastern Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("African Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("North American Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("South American Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Caribbean Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Oceanic Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Mesoamerican Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Native American Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Vegetarian and Vegan Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Fast Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Street Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Desserts and Sweets");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Beverages");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Beverages");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Fusion Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Health and Wellness Food");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Regional Specialties");
+INSERT INTO dish_draw.food_types (name_of_food) VALUES ("Others");
+
