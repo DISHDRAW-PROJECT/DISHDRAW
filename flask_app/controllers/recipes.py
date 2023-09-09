@@ -10,7 +10,7 @@ import os
 # ---------------------------------------------------
 # SHOW EACH RECIPE
 
-@app.route('/foodtype/<int:food_type_id>')
+@app.route('/food_type/<int:food_type_id>')
 def each_recipe(food_type_id):
     if 'user_id' not in session:
         return redirect ('/logout')
@@ -23,13 +23,13 @@ def each_recipe(food_type_id):
 
 # SHOW RECIPES BY FOOD TYPE - FOOD TYPE DISPLAY PAGE
 
-@app.route('/food_type/recipes/<int:recipe_id>/<int:food_type_id>')
+@app.route('/recipes/<int:recipe_id>/<int:food_type_id>')
 def food_type_display(recipe_id,food_type_id):
     if 'user_id' not in session:
         return redirect ('/logout')
     data = {"id": session['user_id']}
     food_type_data = {"id": food_type_id}
-    return render_template('show.html', user= User.get_by_id(data), reports = Recipe.get_recipe_by_id(food_type_data))
+    return render_template('foodtypes.html', user= User.get_by_id(data), reports = Recipe.get_recipe_by_id(food_type_data))
 
 #----------------------------------------------------
 
@@ -42,7 +42,7 @@ def show_recipe(recipe_id,food_type_id):
     data = {"id":recipe_id}
     user_data = {"id":session['user_id']}
     food_type_data = {"id": food_type_id}
-    return render_template('/show.html', recipe = Recipe.get_recipes_by_id_and_foodtypes(data), user = User.get_by_id(user_data), notes = Note.notes_with_recipe_id(data), food_type = Food_Type.get_one_food_type(food_type_data))
+    return render_template('show.html', recipe = Recipe.get_recipes_by_id_and_foodtypes(data), user = User.get_by_id(user_data), notes = Note.notes_with_recipe_id(data), food_type = Food_Type.get_one_food_type(food_type_data))
 
 # ---------------------------------------------------
 
