@@ -39,7 +39,7 @@ def register():
         "email":request.form["email"],
         "password":bcrypt.generate_password_hash(request.form["password"])
     }
-    id = User.save_recipe(data)
+    id = User.save(data)
     session['user_id'] = id
     return redirect("/dashboard")
 

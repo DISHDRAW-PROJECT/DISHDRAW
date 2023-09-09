@@ -33,7 +33,7 @@ class User:
         if len(results) >= 1:
             flash("Email already taken.")
             is_valid = False
-        if len(data["fist_name"]) < 3:
+        if len(data["first_name"]) < 3:
             flash("First name must be at least 3 characters.","register")
             is_valid = False
         if len(data["last_name"]) < 3:
