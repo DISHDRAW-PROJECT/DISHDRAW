@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Recipe</title>
+    <title>Create New Recipe</title>
+    <link rel="stylesheet" href="style_create.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">My Recipes</a></li>
+            <li><a href="">All Recipes</a></li>
+            <li><a href="">New Recipe</a></li>
+            <li><a href="">Draw Your Dish</a></li>
+            <li style="float:right"><a href="">Logout</a></li>
+        </ul>
+    </div>
+    <form action="">
+        <div class="flex">
+            <h1>New Recipe</h1>
+            <select name="foodtypes" id="">
+                <option value="value" selected>Type of Food</option>
+                <option value="Asian Food">Asian Food</option>
+                <option value="European Food">European Food</option>
+                <option value="Middle Eastern Food">Middle Eastern Food</option>
+                <option value="African Food">African Food</option>
+                <option value="Fast Food">Fast Food</option>
+                <option value="Fusion Food">Fusion Food</option>
+            </select>
+        </div><br>
+        <div class="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="ingredients">Ingredients:</label>
+            <textarea></textarea><br>
+            <label for="directions">Directions:</label>
+            <textarea></textarea><br>
+            <label for="cookTime">Cook Time:</label>
+            <input type="text" id="cookTime" name="cookTime" maxlength="4" size="4">
+            <label for="prepTime">Prep Time:</label>
+            <input type="text" id="prepTime" name="prepTime" maxlength="4" size="4"><br>
+            <label for="servings">Serving:</label>
+            <input type="text" id="servings" name="servings" maxlength="4" size="4">
+            <label for="recipe_poster">Upload Recipe:</label>
+            <input type="file" id="myFile" name="filename">
+        </div>
+    </form>    
 </body>
 </html>
