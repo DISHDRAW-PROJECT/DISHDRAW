@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show Recipe</title>
+    <title>Show Recipe and Notes History</title>
+    <link rel="stylesheet" href="style_show.css">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* body {
+            overflow: scroll; 
+        } */
+        
+    </style>
 </head>
 <body>
-    
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">My Recipes</a></li>
+        <li><a href="">All Recipes</a></li>
+        <li><a href="">New Recipe</a></li>
+        <li><a href="">Draw Your Dish</a></li>
+        <li style="float:right"><a href="">Logout</a></li>
+    </ul>
+    <div>
+        <h1>Recipe Name</h1>
+        <div>
+            <picture></picture>
+            <h3>Recipe Creator</h3>
+        </div>
+        <div>
+            <h3>Name:</h3>
+            <h3>Ingredients:</h3>
+            <h3>Directions:</h3>
+            <h3>Prep Time:</h3>
+            <h3>Cook Time:</h3>
+            <h3>servings:</h3>
+        </div>
+    </div>
+    <div>
+        <div class="top-bar">
+            <h4>Notes History</h4>
+        </div>
+        <div class="notes">
+
+        </div>
+    </div>
 </body>
 </html>
