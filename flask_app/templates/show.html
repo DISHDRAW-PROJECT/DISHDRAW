@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show Recipe and Notes History</title>
     <link rel="stylesheet" href="style_show.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
+        
+        .display {
+            display: flex;
+        }
+
+        .bg-2 { 
+            background-color: #8491a3; 
+            color: #ffffff;
+        }
         ul {
             list-style-type: none;
             margin: 0;
@@ -25,6 +36,7 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+        
 
         /* body {
             overflow: scroll; 
@@ -41,28 +53,33 @@
         <li><a href="">Draw Your Dish</a></li>
         <li style="float:right"><a href="">Logout</a></li>
     </ul>
-    <div>
-        <h1>Recipe Name</h1>
-        <div>
-            <picture></picture>
-            <h3>Recipe Creator</h3>
+    <div class="display">
+        <div class="bg-2">
+            <h1>Recipe Name</h1>
+            <div>
+                <picture></picture>
+                <h3>Recipe Creator</h3>
+            </div>
+            <div>
+                <h3>Name:</h3>
+                <h3>Ingredients:</h3>
+                <h3>Directions:</h3>
+                <h3>Prep Time:</h3>
+                <h3>Cook Time:</h3>
+                <h3>Servings:</h3>
+            </div>
         </div>
         <div>
-            <h3>Name:</h3>
-            <h3>Ingredients:</h3>
-            <h3>Directions:</h3>
-            <h3>Prep Time:</h3>
-            <h3>Cook Time:</h3>
-            <h3>servings:</h3>
+            <div class="top-bar">
+                <h4>Notes History</h4>
+            </div>
+            <div class="notes">
+    
+            </div>
         </div>
-    </div>
-    <div>
-        <div class="top-bar">
-            <h4>Notes History</h4>
-        </div>
-        <div class="notes">
 
-        </div>
     </div>
+    
+    
 </body>
 </html>
